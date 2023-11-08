@@ -1,0 +1,17 @@
+<p>arrayelement works!</p>
+<div class="container">
+    <div class="justify-content-center">
+  <div class=" py-4 shadow rounded">
+        <div class="bg-gradient col-md-5 mx-5 mt-3">
+      
+            <input type="text" name="element" id="" min="0" max="99" required class="form-control" #element placeholder="enter the number">
+            <button class="btn btn-success mt-4" (click)="addElement(element.value)">Add element</button>
+            <div class="mt-5">
+                <ng-container *ngFor="let item of numberArr">
+                    <p>{{item}}</p>
+                </ng-container>
+            </div>
+  </div> 
+  </div>
+  </div>
+  </div>

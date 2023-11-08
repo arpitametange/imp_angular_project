@@ -1,0 +1,22 @@
+<div class="container">
+    <label for=""><h1>Login</h1></label>
+<form action="" [formGroup]="myreactiveform" (ngSubmit)="onsubmit()" >
+<p>
+    <mat-form-field appearance="fill">
+      <mat-label>username</mat-label>
+      <input  formControlName="user" matInput placeholder="Placeholder">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>password</mat-label>
+      <input formControlName="pass" matInput placeholder="Placeholder">
+     
+    </mat-form-field>
+  </p>
+  <button type="submit" [mat-dialog-close]="true">login</button>
+  <button mat-button mat-dialog-close class="btn btn-dark">Cancel</button>
+
+</form>
+  
+</div>

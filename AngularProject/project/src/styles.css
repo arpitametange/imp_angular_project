@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+.input{
+    color: dimgray;
+}
+.input:invalid{
+    animation: justshake 0.3s forwards;
+    color: red;
+}
+@keyframes justshake {
+    25%{
+        transform: translateX(5px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }
+    75%{
+        transform:translateX(5px);
+    }
+    100%{
+        transform: translateX-(5px);
+    }
+}

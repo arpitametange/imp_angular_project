@@ -1,0 +1,46 @@
+
+    <!-- <mat-sidenav-container> -->
+        <!-- three posible modes for sidenav opend== mode= over/side/push
+        <mat-sidenav mode="side" [(opened)]="opened" >sidenav content</mat-sidenav>
+        <mat-sidenav-content>  -->
+            <!-- main content -->
+            <!-- <mat-progress-bar mode="determinate" [value]="progressValue"></mat-progress-bar>
+
+            <app-navbar></app-navbar>
+            <button (click)="startProgressBar()">progressbaar</button>
+
+            <button (click)="opened=!opened">sidenav opened</button> -->
+            <!-- <app-progressbaar></app-progressbaar> -->
+         <!-- <input type="text" class="input" pattern="=\d+">
+            <router-outlet></router-outlet> -->
+
+           <!-- logic for task adding element in array from input -->
+<!-- 
+<div><input type="text" #input>
+</div>
+<button class="btn btn-dark" (click)="event(input.value)">Add-element</button>
+
+<ng-container *ngFor="let t of array">
+  <p>{{t}}</p>
+</ng-container> -->
+
+        <!-- </mat-sidenav-content>
+    </mat-sidenav-container>
+    <app-arrayelement></app-arrayelement> -->
+   <div><input type="text" (input)="eventt($event)"></div>
+    
+    <input type="text" [(ngModel)]="user">
+        {{user}}
+        <div *ngIf="variable; else elsevariable ">
+          this is the content 
+        </div>
+        <ng-template #elsevariable> <div>this is the else condition</div> </ng-template>
+
+        <button (click)="button()">button</button>
+
+        <div [ngStyle]="{'background-color' : getcolor()}"
+        [ngClass]="{offline: status==='offline'}"
+        >{{status}}</div>
+        <button (click)="clickevent()">getdata</button>
+
+        
